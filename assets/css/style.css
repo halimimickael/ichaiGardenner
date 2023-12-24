@@ -656,7 +656,7 @@ a:hover {
   position: absolute;
   top: 55px;
   right: 15px;
-  bottom: 670px;
+  /* bottom: auto; */
   left: 15px;
   padding: 10px 0;
   background-color: #fff;
