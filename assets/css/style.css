@@ -632,7 +632,7 @@ a:hover {
     display: none;
   }
 }
-
+/* la  */
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
@@ -656,7 +656,7 @@ a:hover {
   position: absolute;
   top: 55px;
   right: 15px;
-  bottom: 15px;
+  bottom: 670px;
   left: 15px;
   padding: 10px 0;
   background-color: #fff;
