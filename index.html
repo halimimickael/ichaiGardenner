@@ -40,7 +40,13 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">ראשי</a></li>
           <li><a class="nav-link scrollto" href="#services">שירות</a></li>
-          <li><a class="nav-link scrollto " href="#work">עבודות</a></li>
+          <li class ="dropdown"><a class="nav-link scrollto" href="#work">עבודות<i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="portfolio-details.html">עבודה 1</a></li>
+                  <li><a href="portfolio-details1.html">עבודה 2</a></li>
+                  <li><a href="portfolio-details2.html">עבודה 3</a></li>
+                </ul>
+          </li>
           <li><a class="nav-link scrollto" href="#contact">צור קשר</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -117,60 +123,7 @@
       </div>
     </section><!-- End Services Section -->
 
-    <!-- ======= Counter Section ======= -->
-    <!-- <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container position-relative">
-        <div class="row">
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-check"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="450" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">WORKS COMPLETED</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">YEARS OF EXPERIENCE</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-people"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="550" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">TOTAL CLIENTS</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-award"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">AWARD WON</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- End Counter Section -->
-
+  
     <!-- ======= Portfolio Section ======= -->
     <section id="work" class="portfolio-mf sect-pt4 route">
       <div class="container">
@@ -188,38 +141,65 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-1.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title" >פרוייטק באריאל</h2>
+          <section id="portfolio-details" class="portfolio-details col-md-4">
+                <div class="work-box">
+                  <div class="portfolio-details-slider swiper">
+                    <div class="swiper-wrapper align-items-center">
+      
+                      <div class="swiper-slide">
+                        <img src="assets/img/work-1.jpg" alt="">
+                      </div>
+      
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio-details-2.jpg" alt="">
+                      </div>
+      
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio-details-3.jpg" alt="">
+                      </div>
+      
+                    </div>
+                    <div class="swiper-pagination"></div>
                   </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">פרוייטק באריאל</h2>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                      </div>
                     </div>
                   </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
+          </section>
+          <!-- 111111111111111111111111111111111111 -->
+          <section id="portfolio-details" class="portfolio-details col-md-4">
             <div class="work-box">
-              <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-2.jpg" alt="" class="img-fluid">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+    
+                  <div class="swiper-slide">
+                    <img src="assets/img/work-2.jpg" alt="">
+                  </div>
+    
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio-details-2.jpg" alt="">
+                  </div>
+    
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio-details-3.jpg" alt="">
+                  </div>
+    
                 </div>
-              </a>
+                <div class="swiper-pagination"></div>
+              </div>
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Loreda Cuno Nere</h2>
+                    <h2 class="w-title">פרוייטק בלשם</h2>
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
@@ -227,31 +207,45 @@
                     </div>
                   </div>
                 </div>
-                </div>
               </div>
             </div>
-            <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-3.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Mavrito Lana Dere</h2>
+          </section>
+            <!-- 222222222222222222222222222222222 -->
+            <section id="portfolio-details" class="portfolio-details col-md-4">
+              <div class="work-box">
+                <div class="portfolio-details-slider swiper">
+                  <div class="swiper-wrapper align-items-center">
+      
+                    <div class="swiper-slide">
+                      <img src="assets/img/work-5.jpg" alt="">
+                    </div>
+      
+                    <div class="swiper-slide">
+                      <img src="assets/img/portfolio-details-2.jpg" alt="">
+                    </div>
+      
+                    <div class="swiper-slide">
+                      <img src="assets/img/portfolio-details-3.jpg" alt="">
+                    </div>
+      
                   </div>
-                <div class="col-sm-4">
-                  <div class="w-like">
-                    <a href="portfolio-details2.html"> <span class="bi bi-plus-circle"></span></a>
-                  </div>
+                  <div class="swiper-pagination"></div>
                 </div>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">פרוייטק בירושלים</h2>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="portfolio-details2.html"> <span class="bi bi-plus-circle"></span></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </section>
+            <!-- 33333333333333333333 -->
         </div>
       </div>
     </section><!-- End Portfolio Section -->
