@@ -20,6 +20,7 @@
     }
   }
 
+
   /**
    * Easy event listener function
    */
@@ -233,3 +234,34 @@
   new PureCounter();
 
 })()
+
+function scrollToWorkSection() {
+  var workSection = document.getElementById("work");
+  workSection.scrollIntoView({ behavior: 'smooth' });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const portfolioSections = document.querySelectorAll(".portfolio-hover");
+
+  portfolioSections.forEach((section) => {
+    section.addEventListener("mouseover", function () {
+      // Activer le défilement du carrousel
+      enableCarousel(section);
+    });
+
+    section.addEventListener("mouseout", function () {
+      // Désactiver le défilement du carrousel
+      disableCarousel(section);
+    });
+  });
+
+  function enableCarousel(section) {
+    const swiperInstance = section.querySelector(".portfolio-details-slider").swiper;
+    swiperInstance.autoplay.start();
+  }
+
+  function disableCarousel(section) {
+    const swiperInstance = section.querySelector(".portfolio-details-slider").swiper;
+    swiperInstance.autoplay.stop();
+  }
+});

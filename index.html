@@ -39,15 +39,18 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">ראשי</a></li>
-          <li><a class="nav-link scrollto" href="#services">שירות</a></li>
-          <li class ="dropdown"><a class="nav-link scrollto" href="#work">עבודות<i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="portfolio-details.html">עבודה 1</a></li>
-                  <li><a href="portfolio-details1.html">עבודה 2</a></li>
-                  <li><a href="portfolio-details2.html">עבודה 3</a></li>
-                </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">צור קשר</a></li>
+          <li><a class="nav-link scrollto active" href="#services">שירות</a></li>
+          <li class="dropdown active">
+            <a class="nav-link scrollto " href="#works " onclick="scrollToWorkSection()">עבודות<i class="bi bi-chevron-right "></i></a>
+            <ul>
+                <li><a href="portfolio-details.html">עבודה 1</a></li>
+                <li><a href="portfolio-details2.html">עבודה 2</a></li>
+                <li><a href="portfolio-details2.html">עבודה 3</a></li>
+            </ul>
+        </li>
+      
+        
+          <li><a class="nav-link scrollto active" href="#contact">צור קשר</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -140,43 +143,46 @@
             </div>
           </div>
         </div>
+        <style>
+          .swiper-slide img {
+            width: 100%; /* Ensure the image takes 100% width of its container */
+            height: 200px; /* Set a fixed height for all images, adjust as needed */
+            object-fit: cover; /* Maintain the aspect ratio and cover the container */
+          }
+        </style>
         <div class="row">
-          <section id="portfolio-details" class="portfolio-details col-md-4">
-                <div class="work-box">
-                  <div class="portfolio-details-slider swiper">
-                    <div class="swiper-wrapper align-items-center">
-      
-                      <div class="swiper-slide">
-                        <img src="assets/img/work-1.jpg" alt="">
-                      </div>
-      
-                      <div class="swiper-slide">
-                        <img src="assets/img/portfolio-details-2.jpg" alt="">
-                      </div>
-      
-                      <div class="swiper-slide">
-                        <img src="assets/img/portfolio-details-3.jpg" alt="">
-                      </div>
-      
-                    </div>
-                    <div class="swiper-pagination"></div>
+          <section id="portfolio-details-1" class="portfolio-details col-md-4 portfolio-hover">
+            <div class="work-box">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="assets/img/work-1.jpg" alt="">
                   </div>
-                <div class="work-content">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <h2 class="w-title">פרוייטק באריאל</h2>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="w-like">
-                        <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                      </div>
-                    </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/project1_1.jpeg" alt="">
                   </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/project1_2.jpeg" alt="">
                   </div>
                 </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">פרוייטק באריאל</h2>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
           <!-- 111111111111111111111111111111111111 -->
-          <section id="portfolio-details" class="portfolio-details col-md-4">
+          <section id="portfolio-details-2" class="portfolio-details col-md-4 portfolio-hover">
             <div class="work-box">
               <div class="portfolio-details-slider swiper">
                 <div class="swiper-wrapper align-items-center">
@@ -211,7 +217,7 @@
             </div>
           </section>
             <!-- 222222222222222222222222222222222 -->
-            <section id="portfolio-details" class="portfolio-details col-md-4">
+            <section id="portfolio-details-3" class="portfolio-details col-md-4 portfolio-hover">
               <div class="work-box">
                 <div class="portfolio-details-slider swiper">
                   <div class="swiper-wrapper align-items-center">
@@ -433,8 +439,8 @@
                         </h5>
                       </div>
                       <div class="more-info">
-                        <ul class="list-ico">
-                          <li><span class="bi bi-phone"></span> +972 50-353-5282</li>
+                        <ul class="list-ico"> 
+                          <li><a class="bi bi-phone" href="tel:+972 50-353-5282"> +972 50-353-5282</a></li>
                           <li><span class="bi bi-geo-alt"></span>ישובי השמרון</li>
                         </ul>
                       </div>
@@ -459,6 +465,7 @@
           <div class="copyright-box">
             <p class="copyright">&copy; Copyright <strong>ישי תחזוקה והקמת גינות</strong></p>
             <div class="credits">
+              <a href="mailto:mickaelhalimi1@gmail.com" style="text-decoration:underline;">Email the Store</a>
               Designed by <a href="https://github.com/halimimickael">Mickael Halimi</a>
             </div>
           </div>
@@ -468,7 +475,8 @@
   </footer><!-- End  Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
+  <a href="tel:+972 50-353-5282" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-telephone"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
